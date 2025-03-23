@@ -34,13 +34,14 @@ public class CatchLis implements Listener {
         release(player,1);
     }
     public void addPassenger(Entity below, Entity top) {//dg
-        
+        if (top.getPassengers().isEmpty()) return;
         for (Entity passenger : top.getPassengers()) {
             addPassenger(below, passenger);
         }
         below.addPassenger(top);
     }
     public void release(Player player,double speed){
+        if (player.getPassengers().isEmpty()) return;
         Entity entity = player.getPassengers().get(0);
         player.removePassenger(entity);
         Vector direction = player.getLocation().getDirection().normalize();
@@ -48,6 +49,7 @@ public class CatchLis implements Listener {
     }
     @EventHandler
     public void Attacks(EntityDamageByEntityEvent event){
+        if (event.getEntity().getPassengers().isEmpty()) return;
         if (event.getEntity() instanceof Player && event.getEntity().getPassengers() != null) release((Player) event.getEntity(),0);
     }
 }
