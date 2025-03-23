@@ -25,7 +25,7 @@ public final class CatchPlayers extends JavaPlugin {
             public void run() {
                 for (Player p : Bukkit.getOnlinePlayers()) {
                     if (!p.getPassengers().isEmpty() && p.getPassengers().get(0) instanceof Chicken) {
-                        p.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_DIGGING, 20 * 2, 1, false, false));
+                        p.addPotionEffect(new PotionEffect(PotionEffectType.SLOW_FALLING, 20 * 2, 1, false, false));
                     }
                 }
             }

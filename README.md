@@ -1,6 +1,6 @@
 # CatchPlayers 
-[![github](https://img.shields.io/badge/github-N501YHappy-brightgreen.svg)](https://github.com/snowdreams1006)
-[![github](https://img.shields.io/badge/spigot-1.12.2+-orange.svg)](https://github.com/snowdreams1006)
+![github](https://img.shields.io/badge/github-N501YHappy-brightgreen.svg)
+![github](https://img.shields.io/badge/spigot-1.16.5+-orange.svg)
 
 ---
 
