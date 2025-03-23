@@ -14,8 +14,6 @@ public class CatchLis implements Listener {
     @EventHandler
     public void player_catch(PlayerInteractEntityEvent event) {
         Player player = event.getPlayer();
-
-        // 检查玩家是否正在骑乘其他实体
         if (player.getVehicle() != null) {
             return;
         }
@@ -41,7 +39,6 @@ public class CatchLis implements Listener {
             addPassenger(below, passenger);
         }
         below.addPassenger(top);
-        //1
     }
     public void release(Player player,double speed){
         Entity entity = player.getPassengers().get(0);

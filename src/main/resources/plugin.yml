@@ -1,3 +1,4 @@
 name: CatchPlayers
 version: '${project.version}'
 main: icu.n501yhappy.catchplayers.CatchPlayers
+depend: [ProtocolLib]
