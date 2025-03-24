@@ -85,7 +85,7 @@ public final class CatchPlayers extends JavaPlugin {
         String pluginName = getDescription().getName();
         String version = getDescription().getVersion();
         String authors = String.join(", ", getDescription().getAuthors());
-        String qqGroup = "123456789";
+        String qqGroup = "1042508946";
         String githubUrl = "https://github.com/n501yhappy/CatchPlayers";
         String notice = "感谢使用CatchPlayers插件！如有问题或建议，请加入QQ群或访问GitHub页面发布issues (心情好了我会去看的)";
 
