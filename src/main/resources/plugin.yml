@@ -1,4 +1,5 @@
 name: CatchPlayers
 version: '${project.version}'
 main: icu.n501yhappy.catchplayers.CatchPlayers
-depend: [ProtocolLib]
+authors: [n501yhappy]
+description: A plugin to manage player interactions with entities.
